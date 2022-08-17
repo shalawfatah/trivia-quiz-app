@@ -1,0 +1,30 @@
+/* GENERAL SHARED STYLES */
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.btn {
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+  color: black;
+}
+.btn:hover {
+  color: gray;
+}
