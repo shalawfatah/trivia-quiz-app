@@ -1,7 +1,18 @@
-import React from 'react'
+import { useAtom } from 'jotai';
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom';
+import { markAtom, questionNumberAtom, resultAtom } from '../Store';
 
 const Home = () => {
+  const [questionNumber, setQuestionNumber] = useAtom(questionNumberAtom)
+  const [mark, setMark] = useAtom(markAtom)
+  const [result, setResult] = useAtom(resultAtom)
+  
+  useEffect(() => {
+    setQuestionNumber(0)
+    setMark(0)
+    setResult(false)
+  }, [])
   return (
     <div className='container'>
       <h1>Welcome to Trivia Challenge</h1>
