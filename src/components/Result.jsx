@@ -4,6 +4,7 @@ import { dataAtom, markAtom } from '../Store'
 import {Link} from 'react-router-dom'
 
 const Result = () => {
+  // DATA FOR RESULT OF THE GAME
   const [data, setData] = useAtom(dataAtom)
   const [mark, setMark] = useAtom(markAtom)
 

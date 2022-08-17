@@ -8,11 +8,13 @@ const Home = () => {
   const [mark, setMark] = useAtom(markAtom)
   const [result, setResult] = useAtom(resultAtom)
   
+  // WHEN USER STARTS, OR RETURNS, SET THE GAME CREDENTIALS ANEW
   useEffect(() => {
     setQuestionNumber(0)
     setMark(0)
     setResult(false)
   }, [])
+  
   return (
     <div className='container'>
       <h1>Welcome to Trivia Challenge</h1>
